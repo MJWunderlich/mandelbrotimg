@@ -1,0 +1,68 @@
+:root {
+    font-size: 16px;
+}
+
+body * {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+section {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+label {
+    color: #8a8a8a;
+    font-size: 1rem;
+}
+
+section {
+    overflow: hidden;
+}
+
+em {
+    color: #8a8a8a;
+}
+
+.align-bottom {
+    display: flex;
+    align-items: flex-end;
+}
+
+#image-container {
+    background-size: cover;
+    background-color: black;
+}
+
+#outer-container {
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+}
+
+#submit {
+    width: 100% !important;
+}
+
+#download-image {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+}
+
+div.item.withImage {
+}
+
+div.item.withImage a {
+    color: white;
+}
