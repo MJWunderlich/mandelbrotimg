@@ -87,10 +87,10 @@ def simple(request, width=0, height=0):
     if form.is_valid():
         image = form.generate(mandelbrot=False)
         slug = save_image_record(image, [width, height], 'simple')
-        return HttpResponse({
+        return HttpResponse(json.dumps({
             'url': slug,
             'aspect_ratio': float(width) / float(height)
-        }, 'application/json')
+        }), 'application/json')
     return HttpResponseBadRequest("Invalid image request")
 
 
